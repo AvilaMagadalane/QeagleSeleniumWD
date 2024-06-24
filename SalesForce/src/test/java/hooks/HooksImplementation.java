@@ -17,6 +17,8 @@ public class HooksImplementation extends BaseClass{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		//driver.get("https://login.salesforce.com2/");
+		driver.get("https://qeagle-d-dev-ed.develop.my.salesforce.com/");
 		
 	}
 	@AfterMethod

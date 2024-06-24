@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 21 23:40:28 IST 2024</td>
+<td>Started on:</td><td>Mon Jun 24 20:03:54 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37765 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4153 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Work type Group", "WorkTypeGroup in Sales force"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at stepscreateWTG.WorkTypeGroup.verify_work_type_group_name(WorkTypeGroup.java:40)
-	at ✽.Verify Work Type Group Name(file:///C:/Users/DELL/git/Salesforce/SalesForce/src/test/java/features/CreateWorkTypeGroup.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2107088180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2107088180'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at stepscreateWTG.WorkTypeGroup.verify_work_type_group_name(WorkTypeGroup.java:40)
-	at ✽.Verify Work Type Group Name(file:///C:/Users/DELL/git/Salesforce/SalesForce/src/test/java/features/CreateWorkTypeGroup.feature:11)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeDriver.findElement(org.openqa.selenium.By)&quot; because &quot;stepscreateWTG.Login.driver&quot; is null
+	at stepscreateWTG.Login.login_to_salesforce(Login.java:14)
+	at ✽.Login to salesforce(file:///C:/Users/DELL/git/Salesforce/SalesForce/src/test/java/features/CreateWorkTypeGroup.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1103505488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1103505488'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.chrome.ChromeDriver.findElement(org.openqa.selenium.By)&quot; because &quot;stepscreateWTG.Login.driver&quot; is null
+	at stepscreateWTG.Login.login_to_salesforce(Login.java:14)
+	at ✽.Login to salesforce(file:///C:/Users/DELL/git/Salesforce/SalesForce/src/test/java/features/CreateWorkTypeGroup.feature:4)
 </pre></div></td>
-<td>34</td>
+<td>0</td>
 <td>runner.CucumberRunner@25ce9dc4</td></tr>
 </table><p>
 </body>
